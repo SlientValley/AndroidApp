@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_shape">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="设     置"
+        android:gravity="center"
+        android:textColor="@color/dark"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:background="@drawable/blank_background"
+            android:gravity="start"
+            android:padding="10dp"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:text="主    时"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/base_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:background="@color/blankDialog"
+            android:hint="30"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:minLines="1" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="@drawable/blank_background_right"
+            android:gravity="start"
+            android:padding="10dp"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:text="分"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:text="加秒时"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:gravity="start"
+            android:background="@drawable/blank_background" />
+
+        <EditText
+            android:id="@+id/add_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:hint="15"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/blankDialog"
+            android:minLines="1"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="@drawable/blank_background_right"
+            android:gravity="start"
+            android:padding="10dp"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:text="秒"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button">
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:text="确定"
+            android:textSize="18sp"
+            android:background="@drawable/button_left"
+            android:drawableStart="@drawable/singlechose"
+            android:drawablePadding="5dp"/>
+        <TextView
+            android:layout_width="0.3dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:background="@drawable/button_right"
+            android:drawableStart="@drawable/close"
+            android:text="取消"
+            android:textSize="18sp"
+            android:drawablePadding="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
